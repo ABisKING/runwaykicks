@@ -1,0 +1,587 @@
+body{
+  overflow-x: hidden;
+}
+.nav1{
+    width:100%;
+    height:200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav1 i{
+    font-size:30px;
+    margin:0px 10px;
+    border-radius: 50%;
+    background: #367ada;
+    color:white;
+    padding:10px;
+    transition:linear 0.5s;
+    overflow: hidden;
+}
+.nav1 i:hover{
+   background:black;
+   color:#367ada;
+   transform:scale(1.5);
+    transition: 0.5s ease-in-out;
+}
+.nav2{
+    width:100%;
+    height:50px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow:0px 0px 5px grey;
+    cursor:pointer;
+    
+}
+.nav2 i{
+    margin:0px 30px;
+    font-size:25px;
+    font-family: 'Bebas Neue', cursive;
+}
+.nav2 i:hover{
+    color:#367ada;
+    transform:scale(1.5);
+    transition: 0.5s ease-in-out;
+}
+.logo{
+    text-align:center;
+    font-size:30px;
+    line-height:40%;
+    animation: logo 5s linear  infinite;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@keyframes logo{
+    0%{color:#367ada;
+        transform:scale(1.5);
+        transition: 0.5s ease-in-out;}
+    100%{
+        text-align:center;
+    line-height:40%;
+    }
+}
+/** Code By Webdevtrick ( https://webdevtrick.com ) **/
+
+  .slideshow {
+    width: 960px;
+    height: 540px;
+    background-color: lightgrey;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    user-select: none;
+    z-index: 30;
+  }
+  
+ .slideshow img {
+    width: 960px;
+    height: 540px;
+    position: absolute;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+   
+  }
+  .slideshow img.hide {
+    transition: transform 1s ease, opacity 0.5s ease 0.5s;
+    opacity: 0;
+    transform: scale(2, 2) translateY(-80%);
+  }
+  .slideshow img:first-child {
+    z-index: 6;
+  }
+  .slideshow img:nth-child(2) {
+    z-index: 5;
+  }
+  .slideshow img:nth-child(3) {
+    z-index: 4;
+  }
+  .slideshow img:nth-child(4) {
+    z-index: 3;
+  }
+  .slideshow img:nth-child(5) {
+    z-index: 2;
+  }
+  img:last-child {
+    z-index: 1;
+  }
+  @media screen and (max-width: 1000px) {
+    img {
+      width: 800px;
+      height: 450px;
+    }
+    .slideshow {
+      width: 800px;
+      height: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 825px) {
+    img {
+      width: 640px;
+      height: 360px;
+    }
+    .slideshow {
+      width: 640px;
+      height: 360px;
+    }
+  }
+  @media screen and (max-width: 665px) {
+    .slideshow img {
+      width: 480px;
+      height: 270px;
+    }
+    .slideshow {
+      width: 480px;
+      height: 270px;
+    }
+  }
+  @media screen and (max-width: 485px) {
+    .slideshow img {
+      width: 320px;
+      height: 180px;
+    }
+    .slideshow {
+      width: 305px;
+      height: 180px;
+    }
+  }
+ .container{
+    width:100%;
+    height:max-content;
+    margin-top:50px;
+    overflow: hidden;
+ }
+ .container h1{
+    text-align:center;
+    margin:30px 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container p{
+    margin:5px 35px;
+    font-size:40px;
+    margin-bottom:10px;
+    font-family: 'Bebas Neue', cursive;
+}
+ 
+.list{
+  width:110%;
+    height:max-content;
+    display:flex;
+    box-shadow: 0px 0px 10px grey;
+}
+.list div:hover{
+  box-shadow: 0px 0px 100px grey;
+  transition: 0.4s ease-in-out;
+  transform: translateZ(100%);
+
+}
+ .list div img{
+    width:200px;
+    height:auto;
+    margin-inline: 35px;
+}
+
+.list h3{
+  width:40%;
+    margin:2px 35px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.list label{
+    margin-inline:35px;
+    font-size:20px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.list div p{
+    width:40%;
+    text-align:center;
+    font-size:20px;
+    margin:10px 50px;
+    padding:10px;
+    color:white;
+    background: #367ada;
+    cursor:pointer;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.list div i{
+  width:40%;
+  text-align:center;
+  font-size:20px;
+  margin:10px 50px;
+  padding:10px;
+  color:white;
+  background: #367ada;
+  cursor:pointer;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.list h4{
+    margin:5px 35px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.discount{
+  height:max-content;
+  background: #d2f704;
+  display:flex;
+  margin-bottom:40px;
+}
+.discount h1{
+  margin:35px;
+  padding:40px 0px;
+  font-size:27px;
+  width:70%;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.discount p{
+  width:15%;
+  height:max-content;
+  margin:70px;
+  margin-right:70px;
+  padding:10px 0px;
+  text-align:center;
+  background: black;
+  color:white;
+  font-size:20px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.discount p:hover{
+  width:20%;
+  box-shadow: 15px 15px 1px grey;
+  transition: 0.8s ease-in-out;
+}
+footer{
+  width:100%;
+  height:max-content;
+  background: #272121;
+  display:block;
+  overflow:hidden;
+}
+.full{
+  width:100%;
+  height:max-content;
+  display: flex;
+}
+.a1{
+height:200px;
+width:max-content;
+color:white;
+padding:10px;
+}
+.a1 h4{
+  margin:40px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.a2{
+  height: max-content;
+  width:max-content;
+  color:#c4bcbc;
+  margin:10px 20px;
+}
+.a2 p{
+  margin:20px 0px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.a2 h3{
+  color:white;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.aboutme{
+  width:30%;
+  height:max-content;
+  color:#e5e0e0;
+  margin:0px 100px;
+  margin-left:50px;
+}
+.aboutme h1{
+  text-align:center;
+  color:white;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.aboutme p{
+  text-align:center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.footicons{
+  width:1%;
+  height:max-content;
+  display:block;
+  color:white;
+  margin:20px 50px;
+}
+.footicons i{
+  font-size:30px;
+  margin:10px 0px;
+  margin-right:10px;
+  border-radius: 50%;
+  background: #367ada;
+  color:white;
+  padding:10px;
+  transition:linear 0.5s;
+}
+.css{
+  width:50%;
+  display: flex;
+}
+.footicons i:hover{
+  background: #516d94;
+  color:black;
+  transform:scale(1.5);
+   transition: 0.5s ease-in-out;
+}
+.copy{
+  width:100%;
+  height:max-content;
+}
+.copy p{
+  margin:20px 10px;
+  font-size: 20px;
+  color:#c4bcbc;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.copy span{
+ 
+  font-size: 20px;
+  color:#c4bcbc;
+  font-family: 'Noto Sans JP', sans-serif;
+  float:right;
+}
+
+@media  (max-width:600px) {
+  body{
+    overflow-x: hidden;
+  }
+  .nav1 {
+    width:100%;
+    height:200px;
+    display:block;
+    align-items: center;
+    overflow:hidden;
+}
+.nav1 i {
+    font-size:15px;
+    margin:9% 4%;
+    border-radius: 50%;
+    background: #367ada;
+    color:white;
+    padding:10px;
+    transition:linear 0.5s;
+    text-align:center;
+}
+.nav2{
+  margin:20px 0px;
+}
+.nav2 i {
+  margin:5px 24px;
+  font-size:12px;
+  font-family: 'Bebas Neue', cursive;
+ 
+}
+.logo{
+  text-align:center;
+  justify-content: center;
+  font-size:15px;
+  line-height:40%;
+  margin-left:105px;
+  animation: logo 5s linear  infinite;
+  font-family: 'Josefin Sans', sans-serif;
+  width: max-content;
+  
+}
+.cart{
+  text-align:center;
+}
+.container h1{
+  text-align:center;
+  margin:30px 5px;
+  font-family: 'Bebas Neue', cursive;
+}
+.container p{
+  margin:5px 0px;
+  font-size:40px;
+  margin-bottom:10px;
+  font-family: 'Bebas Neue', cursive;
+}
+.list{
+  width:100%;
+  height:max-content;
+  display:block;
+}
+.list div img{
+  width:200px;
+  height:auto;
+  margin-inline: 35px;
+}
+.list h3{
+  width:80%;
+    margin:2px 35px;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align:center;
+}
+.list label{
+  margin-inline:100px;
+  font-size:15px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.list label select{
+font-size:6.8px;
+}
+.list h4{
+  font-size:20px;
+  text-align:center;
+}
+.list div p{
+  width:40%;
+  text-align:center;
+  font-size:15px;
+  margin:10px 80px;
+  padding:8px;
+  color:white;
+  background: #367ada;
+  cursor:pointer;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.list div i{
+width:40%;
+text-align:center;
+font-size:15px;
+margin:10px 80px;
+margin-bottom:50px;
+padding:8px;
+color:white;
+background: #367ada;
+cursor:pointer;
+font-family: 'Chakra Petch', sans-serif;
+}
+.list div img{
+  width:200px;
+  height:auto;
+  margin-inline: 50px;
+}
+.discount{
+  width:100%;
+  height:200px;
+  display:block;
+}
+.discount h1{
+  margin:10px;
+  padding:10px 0px;
+  font-size:20px;
+  width:90%;
+  text-align:center;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.discount p{
+  width:35%;
+  height:max-content;
+  margin:10px 100px;
+  margin-right:0px;
+  padding:10px 0px;
+  text-align:center;
+  background: black;
+  color:white;
+  font-size:20px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.discount p:hover{
+  width:35%;
+  box-shadow: 10px 10px 1px grey;
+  transition: 0.5s ease-in-out; 
+}
+footer{
+  height: max-content;
+}
+footer .full{
+   display:block;
+}
+.css{
+  display:flex;
+  width: 100%;
+}
+  .a1{
+    height:180px;
+    width:max-content;
+    color:white;
+    padding:10px;
+    }
+    .a1 h4{
+      margin:20px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size:10px;
+    }
+    
+    .a2 p{
+      margin:20px 0px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size:10px;
+    }
+    .a2 h3{
+      color:white;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size:15px;
+    }
+    .aboutme{
+      width:70%;
+      height:max-content;
+      color:#e5e0e0;
+      margin:0px 100px;
+      margin-left:50px;
+    }
+    .aboutme h1{
+      text-align:center;
+      color:white;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size:20px;
+    }
+    .aboutme p{
+      text-align:center;
+      font-family: 'Noto Sans JP', sans-serif;
+      width:100%;
+      font-size:10px;
+    }
+    .footicons{
+      height:max-content;
+      display:flex;
+      color:white;
+      margin:20px 65px;
+    }
+    .footicons i{
+      font-size:20px;
+      margin:10px 0px;
+      margin-right:10px;
+      border-radius: 50%;
+      background: #367ada;
+      color:white;
+      padding:10px;
+      transition:linear 0.5s;
+    }
+    .footicons i:hover{
+      background: #516d94;
+      color:black;
+      transform:scale(1.5);
+       transition: 0.5s ease-in-out;
+    }
+    .copy{
+      width:100%;
+      height:max-content;
+      display:block;
+    }
+    .copy p{
+      margin:0px 10px;
+      font-size: 10px;
+      color:#c4bcbc;
+      font-family: 'Noto Sans JP', sans-serif;
+      text-align:center;
+    }
+    .copy span{
+      float:right;
+      font-size: 10px;
+      color:#c4bcbc;
+      font-family: 'Noto Sans JP', sans-serif;
+      margin-top:2px;
+    }
+    
+}
